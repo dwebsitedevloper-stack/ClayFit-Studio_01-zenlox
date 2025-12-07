@@ -10,12 +10,6 @@
   "upload_source_maps": true,
   "assets": {
     "not_found_handling": "single-page-application"
-  },
-  "d1_databases": [
-    {
-      "binding": "DB",
-      "database_name": "019af42c-19c5-72b2-906b-f2d68fdc62d4",
-      "database_id": "019af42c-19c5-72b2-906b-f2d68fdc62d4"
-    }
-  ]
+  }
+ 
 }
