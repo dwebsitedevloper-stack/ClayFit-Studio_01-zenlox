@@ -17,11 +17,5 @@
       "database_name": "019af42c-19c5-72b2-906b-f2d68fdc62d4",
       "database_id": "019af42c-19c5-72b2-906b-f2d68fdc62d4"
     }
-  ],
-  "r2_buckets": [
-    {
-      "binding": "R2_BUCKET",
-      "bucket_name": "019af42c-19c5-72b2-906b-f2d68fdc62d4"
-    }
   ]
 }
