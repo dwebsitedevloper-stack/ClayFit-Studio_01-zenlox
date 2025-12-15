@@ -1,15 +1,24 @@
-import { useState } from 'react';
-import { Dumbbell, Menu, X } from 'lucide-react';
+import { useState } from "react";
+import { Dumbbell, Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const menuItems = ['Home', 'Gym Areas', 'Equipment', 'Trainers', 'Programs', 'Membership', 'Gallery', 'Contact'];
+  const menuItems = [
+    "Home",
+    "Gym Areas",
+    "Equipment",
+    "Trainers",
+    "Programs",
+    "Membership",
+    "Gallery",
+    "Contact",
+  ];
 
   const scrollToSection = (item: string) => {
-    const id = item.toLowerCase().replace(' ', '-');
+    const id = item.toLowerCase().replace(" ", "-");
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
       setMobileMenuOpen(false);
     }
   };
@@ -43,7 +52,11 @@ export default function Navbar() {
             </div>
 
             {/* CTA Button - Desktop Only */}
-            <button className="hidden lg:block bg-gradient-to-br from-stone-800 to-neutral-900 text-white px-8 py-3.5 rounded-full clay-shadow font-semibold text-sm hover-lift">
+            {/* CTA Button - Desktop Only */}
+            <button
+              onClick={() => scrollToSection("Membership")}
+              className="hidden lg:block bg-gradient-to-br from-stone-800 to-neutral-900 text-white px-8 py-3.5 rounded-full clay-shadow font-semibold text-sm hover-lift"
+            >
               Join Now
             </button>
 
@@ -65,7 +78,9 @@ export default function Navbar() {
       {/* Mobile Menu Panel */}
       <div
         className={`fixed top-28 right-6 z-40 lg:hidden transition-all duration-300 ${
-          mobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-4 pointer-events-none'
+          mobileMenuOpen
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
         <div className="bg-white/90 backdrop-blur-xl rounded-[32px] clay-shadow-lg p-6 w-64">

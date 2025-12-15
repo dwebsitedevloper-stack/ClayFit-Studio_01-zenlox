@@ -1,4 +1,4 @@
-import { Dumbbell, Instagram, Facebook, Twitter, Youtube } from 'lucide-react';
+import { Dumbbell, Instagram, Facebook, Twitter, Youtube } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -16,7 +16,8 @@ export default function Footer() {
               </span>
             </div>
             <p className="text-stone-600 leading-relaxed mb-6">
-              Premium minimal gym experience with soft 3D aesthetic. Transform your body, elevate your mind.
+              Premium minimal gym experience with soft 3D aesthetic. Transform
+              your body, elevate your mind.
             </p>
             <div className="flex gap-3">
               {[Instagram, Facebook, Twitter, Youtube].map((Icon, i) => (
@@ -34,9 +35,12 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-stone-900 mb-6">Quick Links</h4>
             <ul className="space-y-3">
-              {['About Us', 'Our Story', 'Careers', 'Press'].map((link) => (
+              {["About Us", "Our Story", "Careers", "Press"].map((link) => (
                 <li key={link}>
-                  <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">
+                  <a
+                    href="#"
+                    className="text-stone-600 hover:text-stone-900 transition-colors"
+                  >
                     {link}
                   </a>
                 </li>
@@ -48,9 +52,17 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-stone-900 mb-6">Services</h4>
             <ul className="space-y-3">
-              {['Personal Training', 'Group Classes', 'Nutrition Plans', 'Corporate Wellness'].map((service) => (
+              {[
+                "Personal Training",
+                "Group Classes",
+                "Nutrition Plans",
+                "Corporate Wellness",
+              ].map((service) => (
                 <li key={service}>
-                  <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">
+                  <a
+                    href="#"
+                    className="text-stone-600 hover:text-stone-900 transition-colors"
+                  >
                     {service}
                   </a>
                 </li>
@@ -62,9 +74,17 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-stone-900 mb-6">Support</h4>
             <ul className="space-y-3">
-              {['Help Center', 'Privacy Policy', 'Terms of Service', 'Contact'].map((item) => (
+              {[
+                "Help Center",
+                "Privacy Policy",
+                "Terms of Service",
+                "Contact",
+              ].map((item) => (
                 <li key={item}>
-                  <a href="#" className="text-stone-600 hover:text-stone-900 transition-colors">
+                  <a
+                    href="#"
+                    className="text-stone-600 hover:text-stone-900 transition-colors"
+                  >
                     {item}
                   </a>
                 </li>
